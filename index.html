@@ -53,6 +53,9 @@
           h = h - 12;
           session = "pm";
         }
+        
+        m = (m < 10) ? "0" + m : m;
+
         var time = h + ":" + m + " " + session;
         document.getElementById("clockWidget_AM_PM").innerText = time;
         document.getElementById("clockWidget_AM_PM").textContent = time;
